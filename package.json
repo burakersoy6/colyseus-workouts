@@ -16,5 +16,15 @@
   "bugs": {
     "url": "https://github.com/burakersoy6/colyseus-workouts/issues"
   },
-  "homepage": "https://github.com/burakersoy6/colyseus-workouts#readme"
+  "homepage": "https://github.com/burakersoy6/colyseus-workouts#readme",
+  "dependencies": {
+    "colyseus": "^0.15.57",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
 }
