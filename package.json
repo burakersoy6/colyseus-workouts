@@ -2,9 +2,11 @@
   "name": "colyseus-workouts",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "tsc",
+    "start": "ts-node src/main.ts",
+    "start:dev": "ts-node-dev --watch \"src/**/*\" --respawn --transpile-only src/main.ts"
   },
   "repository": {
     "type": "git",
