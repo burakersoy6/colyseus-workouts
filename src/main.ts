@@ -3,6 +3,8 @@ import { WebSocketTransport } from "@colyseus/ws-transport";
 import { createServer } from "http";
 import express from "express";
 
+import { LobbyRoom } from "./rooms/Lobby";
+
 const app = express();
 const port = 2567;
 
@@ -22,6 +24,8 @@ const transport = new WebSocketTransport({
 const gameServer = new Server({
   transport,
 });
+
+gameServer.define("lobby", LobbyRoom);
 
 gameServer.listen(port);
 console.log(`Server is running on http://localhost:${port}`);
